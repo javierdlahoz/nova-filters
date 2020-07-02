@@ -1,6 +1,6 @@
 <template>
-    <div class="custom-index-toolbar theear-filter-menu">
-        <theear-filter-menu
+    <div class="custom-index-toolbar jdlabs-filter-menu">
+        <jdlabs-filter-menu
             :resource-name="resourceName"
             :soft-deletes="softDeletes"
             :via-resource="viaResource"

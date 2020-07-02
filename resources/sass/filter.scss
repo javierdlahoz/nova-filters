@@ -8,7 +8,7 @@
     }
 }
 
-.theear-filter-menu {
+.jdlabs-filter-menu {
     .per-page {
         max-height: 40px;
 
@@ -25,7 +25,7 @@
 }
 
 .custom-filter-menu {
-    .theear-dropdown-menu {
+    .jdlabs-dropdown-menu {
         left: auto;
         right: 0;
         top: 40px;
@@ -37,7 +37,7 @@
     }
 }
 
-.theear-dropdown-menu {
+.jdlabs-dropdown-menu {
     position: absolute;
     background-color: #ffffff;
     left: 0;
@@ -59,7 +59,7 @@ div[dusk="filter-selector"] {
 }
 
 .autorefresh-btn {
-    .theear-dropdown-menu {
+    .jdlabs-dropdown-menu {
         right: 0;
         width: 280px !important;
         left: auto !important;

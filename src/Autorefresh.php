@@ -1,12 +1,13 @@
 <?php
 
-namespace Theear\Nova\Filters;
+namespace Jdlabs\Nova\Filters;
 
 use Illuminate\Http\Request;
 use Laravel\Nova\Filters\Filter;
 
 class Autorefresh extends Filter
 {
+
     /**
      * The filter's component.
      *
@@ -18,8 +19,6 @@ class Autorefresh extends Filter
      * @var array
      */
     public $options = [
-        // 60  => '1 minute',
-        // 120 => '2 minutes',
         null => 'Disabled',
         300 => '5 minutes',
         600 => '10 minutes',

@@ -26,7 +26,7 @@
                 </span>
             </div>
 
-            <div class="theear-dropdown-menu select-none overflow-hidden bg-white border border-60 shadow rounded-lg"
+            <div class="jdlabs-dropdown-menu select-none overflow-hidden bg-white border border-60 shadow rounded-lg"
                  v-bind:class="wrapperStyles"
                  v-show="showFilterMenu">
                 <scroll-wrap :height="550" class="flex flex-wrap">
@@ -116,7 +116,7 @@
         </div>
 
         <div class="" v-if="autoRefreshFilter">
-            <theear-autorefresh-btn :resource-name="resourceName" :filter="autoRefreshFilter"/>
+            <jdlabs-autorefresh-btn :resource-name="resourceName" :filter="autoRefreshFilter"/>
         </div>
     </div>
 </template>
@@ -217,12 +217,12 @@ export default {
         },
 
         autoRefreshFilter () {
-            return this.getFilterByClass('Theear\\Nova\\Filters\\Autorefresh')
+            return this.getFilterByClass('Jdlabs\\Nova\\Filters\\Autorefresh')
         },
 
         filteredFilters () {
             try {
-                return this.filters.filter(filter => !['App\\Nova\\Filters\\PerPage', 'Theear\\Nova\\Filters\\Autorefresh'].includes(filter.class))
+                return this.filters.filter(filter => !['App\\Nova\\Filters\\PerPage', 'Jdlabs\\Nova\\Filters\\Autorefresh'].includes(filter.class))
             } catch (e) {
                 return this.filters
             }

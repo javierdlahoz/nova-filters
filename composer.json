@@ -1,5 +1,5 @@
 {
-  "name": "theear/nova-filters",
+  "name": "jdlabs/nova-filters",
   "description": "Laravel Nova filters.",
   "keywords": [
     "laravel",
@@ -7,17 +7,17 @@
   ],
   "license": "MIT",
   "require": {
-    "php": ">=7.1.0"
+    "php": ">=7.2.5"
   },
   "autoload": {
     "psr-4": {
-      "Theear\\Nova\\Filters\\": "src/"
+      "Jdlabs\\Nova\\Filters\\": "src/"
     }
   },
   "extra": {
     "laravel": {
       "providers": [
-        "Theear\\Nova\\Filters\\FilterServiceProvider"
+        "Jdlabs\\Nova\\Filters\\FilterServiceProvider"
       ]
     }
   },

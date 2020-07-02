@@ -15,7 +15,7 @@
                       d="M8.292893.292893c.390525-.390524 1.023689-.390524 1.414214 0 .390524.390525.390524 1.023689 0 1.414214l-4 4c-.390525.390524-1.023689.390524-1.414214 0l-4-4c-.390524-.390525-.390524-1.023689 0-1.414214.390525-.390524 1.023689-.390524 1.414214 0L5 3.585786 8.292893.292893z"></path>
             </svg>
         </div>
-        <div class="theear-dropdown-menu select-none overflow-hidden bg-white border border-60 shadow rounded-lg"
+        <div class="jdlabs-dropdown-menu select-none overflow-hidden bg-white border border-60 shadow rounded-lg"
              v-show="showFilterMenu">
             <scroll-wrap :height="550" class="flex flex-wrap">
                 <div class="w-full">

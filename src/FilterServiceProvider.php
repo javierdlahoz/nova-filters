@@ -1,6 +1,6 @@
 <?php
 
-namespace Theear\Nova\Filters;
+namespace Jdlabs\Nova\Filters;
 
 use Laravel\Nova\Nova;
 use Laravel\Nova\Events\ServingNova;
@@ -8,6 +8,7 @@ use Illuminate\Support\ServiceProvider;
 
 class FilterServiceProvider extends ServiceProvider
 {
+
     /**
      * Bootstrap any application services.
      *
@@ -16,8 +17,8 @@ class FilterServiceProvider extends ServiceProvider
     public function boot()
     {
         Nova::serving(function (ServingNova $event) {
-            Nova::script('theear-filters', __DIR__ . '/../dist/js/filter.js');
-            Nova::style('theear-filters', __DIR__ . '/../dist/css/filter.css');
+            Nova::script('jdlabs-filters', __DIR__ . '/../dist/js/filter.js');
+            Nova::style('jdlabs-filters', __DIR__ . '/../dist/css/filter.css');
         });
     }
 
