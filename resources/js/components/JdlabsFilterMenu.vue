@@ -1,5 +1,5 @@
 <template>
-    <div class="flex items-center">
+    <div class="flex filter-menu-wrapper">
         <dropdown
             class="flex-grow relative"
             v-if="filteredFilters.length > 0 || softDeletes || !viaResource"
