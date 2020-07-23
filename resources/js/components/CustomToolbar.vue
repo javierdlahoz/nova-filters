@@ -30,6 +30,7 @@
     import FilterBar from '../mixins/FilterBar'
 
     export default {
+
         mixins: [
             Filterable,
             PerPageable,
@@ -37,8 +38,9 @@
             InteractsWithResourceInformation,
             FilterBar
         ],
+
         mounted() {
             this.$el.parentElement.parentElement.classList.add('flex-col');
-        },
+        }
     }
 </script>

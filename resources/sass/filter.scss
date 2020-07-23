@@ -30,6 +30,12 @@
         right: 0;
         top: 40px;
         width: 60vw !important;
+
+        @media (max-width: 480px) {
+            right: -3px;
+            top: 43px;
+            width: calc(100vw - 5.5rem) !important;
+        }
     }
 
     .autorefresh-btn {

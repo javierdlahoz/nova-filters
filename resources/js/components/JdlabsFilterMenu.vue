@@ -61,9 +61,9 @@
                                 :value="trashed"
                                 @change="trashedChanged"
                             >
-                                <option value="" selected>&mdash;</option>
-                                <option value="with">{{ __('With Trashed') }}</option>
-                                <option value="only">{{ __('Only Trashed') }}</option>
+                                <option value="" v-bind:selected="!trashed || trashed === ''">&mdash;</option>
+                                <option value="with" v-bind:selected="trashed === 'with'">{{ __('With Trashed') }}</option>
+                                <option value="only" v-bind:selected="trashed === 'only'">{{ __('Only Trashed') }}</option>
                             </select>
                         </div>
                     </div>

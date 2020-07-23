@@ -30,6 +30,7 @@
     import FilterBar from '../mixins/FilterBar'
 
     export default {
+
         mixins: [
             Filterable,
             PerPageable,
@@ -37,6 +38,13 @@
             InteractsWithResourceInformation,
             FilterBar
         ],
+
+        data() {
+            return {
+                trashed: ''
+            }
+        },
+
         methods: {
             trashedChanged(trashedStatus) {
                 this.trashed = trashedStatus
@@ -51,5 +59,9 @@
                 this.$emit('per-page-changed', perPage)
             }
         },
+
+        mounted() {
+            this.trashed = this.$route.query[this.trashedParameter] ? this.$route.query[this.trashedParameter] : ''
+        }
     }
 </script>
